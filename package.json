@@ -1,0 +1,20 @@
+{
+  "name": "airalo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api:headless": "cypress run --spec 'cypress/e2e/API/*.cy.js' --headless",
+    "test:api:headed": "cypress run --spec 'cypress/e2e/API/*.cy.js' --headed",
+    "test:ui:headless": "cypress run --spec 'cypress/e2e/UI/*.cy.js' --headless",
+    "test:ui:headed": "cypress run --spec 'cypress/e2e/UI/*.cy.js' --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-wait-until": "^3.0.2"
+  }
+}
