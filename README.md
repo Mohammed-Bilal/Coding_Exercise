@@ -70,19 +70,19 @@ You can run tests for both API and UI using the following commands:
 
 - **Purpose**: Validate the Airalo API for ordering eSIMs and retrieving SIM details.
 - **Key Steps**:
-Load API credentials and order details from a fixture.
-Request an access token before each test, ensuring it exists.
-Place an order for 6 eSIMs and validate the response.
-Retrieve the list of SIMs and verify that the IDs match those from the order.
+- Load API credentials and order details from a fixture.
+- Request an access token before each test, ensuring it exists.
+- Place an order for 6 eSIMs and validate the response.
+- Retrieve the list of SIMs and verify that the IDs match those from the order.
 
 ### UI Tests (`cypress/e2e/UI/airaloUiTest.cy.js`)
 
 - **Purpose**: Validate the UI functionalities for searching and purchasing an eSIM.
 - **Key Steps**:
-Load the base URL and test data from a fixture.
-Accept cookie consent if visible.
-Search for Japan and select the corresponding eSIM package.
-Validate the modal popup details to ensure they match the expected product information.
+- Load the base URL and test data from a fixture.
+- Accept cookie consent if visible.
+- Search for Japan and select the corresponding eSIM package.
+- Validate the modal popup details to ensure they match the expected product information.
 
 ## Conclusion
 All automated tests have been executed successfully, with results aligning with the expected outcomes. This solution demonstrates proficiency with Cypress and automated testing practices.
